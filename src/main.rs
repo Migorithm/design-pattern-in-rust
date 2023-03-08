@@ -1,3 +1,14 @@
+mod structural;
+
+use structural::factory::{render,window};
+
+
+
 fn main() {
-    println!("Hello, world!");
+    let windows = true;
+    if windows{
+        render::render(window::WindowFactory)
+    } else {
+        println!("Nothing to do ")
+    }
 }
